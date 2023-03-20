@@ -6,4 +6,5 @@ sealed interface ResponseState{
     data class Success(val categories :List<Meal>):ResponseState
     object Loading :ResponseState
     object Error:ResponseState
+    object Unspecified:ResponseState
 }
